@@ -11,7 +11,7 @@ env:
   DOCKER_IMAGE_NAME: streamlit
   GCE_INSTANCE: ${{ secrets.GCE_INSTANCE }}
   GCE_INSTANCE_ZONE: ${{ secrets.GCE_INSTANCE_ZONE }}
-
+  CLOUDSDK_PYTHON: python3
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
